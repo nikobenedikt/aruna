@@ -1,5 +1,6 @@
 import React from 'react'
+import style from './Settings.module.scss'
 
-let circuits = () => <div className="circuits">Circuits</div>
+let settings = () => <div className={style.settings}>Circuits</div>
 
 export default settings
