@@ -6,7 +6,7 @@ import { VscCircuitBoard } from 'react-icons/vsc'
 import { RiListSettingsFill } from 'react-icons/ri'
 import { IoMdHelpCircleOutline } from 'react-icons/io'
 
-import './Sidebar.scss'
+import style from './Sidebar.module.scss'
 
 const Sidebar = () => {
   const [isClosed, setIsClosed] = useState(true)
@@ -25,9 +25,9 @@ const Sidebar = () => {
   }
 
   return (
-    <div className={`sidebar-wrapper${isClosed ? ' closed' : ''}`}>
-      <div className="sidebar">
-        <p className="sidebar__logo" onClick={() => clickHandler()}>
+    <div className={`${style.sidebar_wrapper} ${isClosed ? style.closed : ''}`}>
+      <div className={style.sidebar}>
+        <p className={style.sidebar__logo} onClick={() => clickHandler()}>
           Aruna
         </p>
         {lis.map((li, index) => (
