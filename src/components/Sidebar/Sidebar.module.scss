@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
 
-.sidebar-wrapper {
+.sidebar_wrapper {
   &::before {
     content: '';
     position: absolute;
@@ -55,4 +55,8 @@
 .closed {
   transition: all 0.3s ease;
   height: 35px;
+}
+
+.fullwidth {
+  width: 100vw;
 }
